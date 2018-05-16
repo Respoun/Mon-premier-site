@@ -1,0 +1,268 @@
+/** Style Blog **/
+
+
+html{
+	height: 100%;
+	min-height: 100%;
+}
+
+body{
+	background: #e6e6e6;
+}
+
+#wrapper{
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+	height: auto;
+}
+
+@font-face {
+    font-family: 'cinema_stregular';
+    src: url('../font/webfontkit-20171107-045940/cinema_st-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20171107-045940/cinema_st-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#wrapper header nav a img{
+	height: 50px; 
+	width: 50px;
+	transition:transform 1s ease-in-out;
+   	-moz-transition:transform 1s ease-in-out;
+    -webkit-transition:transform 1s ease-in-out;
+
+}
+#wrapper header nav a img:hover{
+	transform: scale(1.0)rotate(-45deg);
+    -moz-transform: scale(1.0)rotate(-45deg);
+    -webkit-transform: scale(1.0)rotate(-45deg);
+}
+
+/*****HEADER SECTION******/
+
+#wrapper header {
+	width:100%;
+	height:auto;
+	position:fixed;
+	top:0;
+	right: O;
+	left:0;
+	background: #fff;
+}
+
+#wrapper header nav a img{
+	height: 50px; 
+	width: 50px;
+}
+
+#wrapper header nav div ul li a{
+	padding-right: .5rem;
+    padding-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+/****** HEADER FIN ******/
+
+/***** NAVIGATION *******/
+
+.jumbotron{
+	padding: 2rem 2rem !important;
+	margin-top: 8rem;
+}
+	
+/****** FIN NAVIGATION *****/
+
+/****** MAIN ********/
+
+#wrapper main div p{
+	margin-top: 1rem;
+}
+
+/*#wrapper main div iframe{
+	margin-left: 150px;
+}*/
+
+#wrapper main div a img{
+	padding:0 0 0 20px;
+	width:275px;
+	height:250px;
+
+}
+
+#wrapper main div img{
+	width: 850px; 
+	height: 400px;   
+}
+
+/****** FIN MAIN ******/
+/****Footer****/
+#wrapper footer{
+	width: 100%;
+	height: 200px;
+	background: #e6e6e6;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+#wrapper footer div ul {
+	margin: 0;
+	padding: 0;
+}
+#wrapper footer div ul li {
+	list-style-type: none;
+	float: left;
+}
+#wrapper footer div ul li a{
+	color: black;
+	display: block;
+	width: 157px;
+	height: 50px;
+	line-height: 50px; 
+	text-align: center;
+	font-size: 18px;
+	margin-right: 3px;
+}
+#wrapper footer ul li .sub li {
+	text-align: center;
+	float:none;
+}
+#wrapper footer h2{
+	line-height: 100px;
+	padding: 50px 50px;
+
+}
+#wrapper footer h2 a{
+	color: black;
+	float: right;
+	font-size: 20px;
+}
+
+/****Mise en STYLE***/
+
+.push-bottom{
+	margin-bottom:5px;
+}
+#empty{
+	width: 100%;
+	height: 1000px
+}
+
+#bold{
+	font-weight: bold;
+}
+
+/**** Social****/
+#wrapper aside #social ul{
+	margin: 5px;
+}
+#wrapper aside #social ul li{
+	list-style:none;
+	float: left;
+	transition:background 0.6s ease-out;
+}
+#wrapper main #social ul li:not(.nomargin){
+	margin-right:10px;
+}
+#wrapper main #social ul li:first-child{
+	background:url('../img/social-icons-ssh.gif') left top;
+}
+#wrapper main #social ul li:first-child:hover{
+	background:url('../img/social-icons-ssh.gif') left bottom;
+}
+#wrapper main #social ul li:nth-child(2){
+	background:url('../img/social-icons-ssh.gif') -75px top;
+}
+#wrapper main #social ul li:nth-child(2):hover{
+	background:url('../img/social-icons-ssh.gif') -75px bottom;
+}
+#wrapper main #social ul li:nth-child(3){
+	background:url('../img/social-icons-ssh.gif') -150px top;
+}
+#wrapper main #social ul li:nth-child(3):hover{
+	background:url('../img/social-icons-ssh.gif') -150px bottom;
+}
+#wrapper  #social ul li a{
+	display: block;
+	width: 75px;
+	height: 75px;
+	text-indent:-10000px;
+	border: 5px solid black;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+
+}
+#wrapper main .jumbotron .ingesup{
+	margin-left: 100px;
+	height: 112px;
+	width: 300px; 
+}
+
+#wrapper main aside iframe{
+	margin-left: 10px;
+}
+
+/****** Contact ********/
+
+#wrapper main div a.btn.btn-lg.btn-primary{
+	margin-top: 25px;
+	margin-left: 480px;
+}
+
+main form {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 335px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+ main form div + div {
+    margin-top: 1em;
+}
+
+main form div label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+main form div input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 300px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid #999;
+}
+
+main form div input:focus, main form div textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+
+main form div textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
+/******* Fin contact *******/
+
+
+
+
+

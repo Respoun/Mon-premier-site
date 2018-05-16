@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" type="text/css" href="../style/style_personalized.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<title>Blog</title>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			  <a class="navbar-brand" href="index.html"><img src="../img/logo.png"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Articles
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="film.html">Film</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="series.html">Séries</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="manga.html">Manga</a>
+			        </div>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="contacts.html">Contact</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="propos.html">A propos</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			    </form>
+			  </div>
+			</nav>						
+		</header>
+		
+		<main role="main" class="container">
+	      <div class="jumbotron">
+	        <h1>Contact :</h1>
+	        <p class="lead">Vous pouvez nous contacter pour toutes recommandations que vous voulez nous faire parvenir :</p>
+	        <!-- <div id="contct">
+	        	<p>Message</p>
+	        </div> -->
+	        <form action="/ma-page-de-traitement" method="post">
+			    <div>
+			        <label for="nom">Nom :</label>
+			        <input type="text" id="nom" />
+			    </div>
+			    <div>
+			        <label for="courriel">Courriel :</label>
+			        <input type="email" id="courriel" />
+			    </div>
+			    <div>
+			        <label for="message">Message :</label>
+			        <textarea id="message"></textarea>
+			    </div>
+			    <INPUT type="checkbox" name="choix1" value="1" > Abonnement Newsletter
+			    <br>
+			    <INPUT type="checkbox" name="choix1" value="1" > J'ai lu et j'accepte les <a href="#">conditions générales</a>
+			</form>
+	        <a class="btn btn-lg btn-primary" href="contact2.html" role="button">Envoyer</a>
+	      </div>
+	      <aside>
+	      <div id="social">
+			<ul>
+				<li><a href="https://www.facebook.com/" target="_blank">Lien vers la page externe</a></li>
+				<li><a href="https://twitter.com/login?lang=fr">Lien vers la page externe</a></li>
+				<li class="nomargin"><a href="https://plus.google.com/?hl=fr" >Lien vers la page externe</a></li>
+			</ul>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10490.883766913274!2d2.2079985!3d48.9016552!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xadb1defcb14c8ad9!2sPARIS+YNOV+CAMPUS!5e0!3m2!1sfr!2sfr!4v1510660570794" width="500" height="300" frameborder="0" style="border:2" allowfullscreen></iframe>
+			
+			
+	      </aside>
+	      <p style="margin-bottom:60px;">
+    	</main>
+<footer>
+	<div>		
+		<div>
+			<ul>
+				<li><a href="#top" id="bold">Home</a></li>
+				<li><a href="#top" id="bold">Article</a>
+					<ul class="sub">
+						<li><a href="film.html">Films</a></li>
+						<li><a href="series.html">Series</a></li>
+						<li><a href="manga.html">Manga</a></li>
+					</ul>
+				</li>
+				<li><a id="bold">Social Network</a>
+					<ul class="sub">
+						<li><a href="https://twitter.com/login?lang=fr" target="_blank">Twitter</a></li>
+						<li><a href="https://fr-fr.facebook.com/login/" target="_blanks">Facebook</a></li>
+						<li><a href="https://accounts.google.com/ServiceLogin?hl=fr" target="_blank">Google +</a></li>
+					</ul>
+				</li>
+				<li><a href="contacts.html" id="bold">Contact</a></li>
+			</ul>
+		</div>
+			<h2>
+			<a href="#top">Copyright©-Ynov/Ingésup2017</a></h2>
+	</div>
+
+</footer>
+</body>
+</html>
+
+<!-- 
+<a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs »</a> -->
+
